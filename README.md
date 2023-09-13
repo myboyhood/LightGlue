@@ -1,3 +1,26 @@
+# LightGlue_CIUS
+Test using `meta_count` image pairs
+```sh
+conda activate superpoint # activate the conda env
+python match_test.py # to save the matches plot
+python match_test_loop.py # to make statistics of the matching time
+```
+- The image matched is shown below, seems good:
+  <p align="center">
+    <a><img src="assets/match_test.png" alt="match_show" width=100%></a>
+    <br>
+    <em>The match result in meta count. </em>
+  </p>
+
+- Average time cost of 640*480 image with 540 keypoints is 110ms using device:  RTX 2070 SUPER and  i7-9700K CPU @ 3.60GHz × 8
+
+## TODO:
+Since there is no C++ version of LightGlue, we will wait official update the C++ version with TensorRT
+
+---
+
+
+
 <p align="center">
   <h1 align="center"><ins>LightGlue ⚡️</ins><br>Local Feature Matching at Light Speed</h1>
   <p align="center">
